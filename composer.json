@@ -1,0 +1,19 @@
+{
+  "name": "test-hook",
+  "description": "This is my first hook.",
+  "require": {
+    "larapack/hooks": "~1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "TestHook\\": "src/"
+    }
+  },
+  "extra": {
+    "hook": {
+      "providers": [
+        "TestHook\\TestHookServiceProvider"
+      ]
+    }
+  }
+}
